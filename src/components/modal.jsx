@@ -76,7 +76,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
               />
             )}
           </div>
-          <div className=" flex justify-between items-center px-4 pt-2">
+          <div className=" flex justify-between items-center px-4 pt-2 pb-2">
             <Link href={project.url}>
               <BsGithub className="text-white text-xl hover:scale-110  hover:text-violet-500 hover:transition-all hover:duration-300" />
             </Link>
