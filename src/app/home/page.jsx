@@ -87,9 +87,9 @@ export default function Home() {
               >
                 <button className="px-3 text-xs md:px-4 py-2 md:py-2.5 bg-primary-bg rounded-full border-none text-center font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3">
                   <span>
-                    <Link href={"/#contact"}>Get Contact</Link>
+                    <Link href="/#contact">Get Contact</Link>
                   </span>
-                  <RiContactsFill size={16} />{" "}
+                  <RiContactsFill size={16} />
                 </button>
               </Link>
             </div>
