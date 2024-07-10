@@ -10,7 +10,7 @@ function Education() {
   const education = {
     id: 1,
     duration: "2020-2024",
-    title: "Bachelors Degree",
+    title: "Software Engineering Bachelors Degree",
     institution: "Celal Bayar University",
   };
   return (
