@@ -4,7 +4,9 @@ import { isValidEmail } from "../../../utils/check-email";
 import axios from "axios";
 import { useState } from "react";
 import { TbMailForward } from "react-icons/tb";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
@@ -36,12 +38,9 @@ function ContactWithoutCaptcha() {
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
     try {
       const res = await emailjs.send(serviceID, templateID, userInput, options);
-      const teleRes = await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      );
 
       if (res.status === 200 || teleRes.status === 200) {
+        console.log("burdayımm");
         toast.success("Message sent successfully!");
         setUserInput({
           name: "",
@@ -56,6 +55,7 @@ function ContactWithoutCaptcha() {
 
   return (
     <div className="">
+      <ToastContainer />
       <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
         Contact with me
       </p>
