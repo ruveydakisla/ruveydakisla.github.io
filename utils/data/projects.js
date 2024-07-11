@@ -49,4 +49,21 @@ export const projects = [
       "User-Friendly Interface : A modern and intuitive interface built with React, offering a smooth and engaging user experience.",
     ],
   },
+  {
+    name: "My Portfolio",
+    project_icon: "portfolio",
+    description:
+      "The Portfolio Project is a responsive web application built with Next.js and Tailwind CSS, designed to be fully functional on both mobile and web platforms. It features an email sender implemented with Email.js, a contact form with validations handled by React-Toastify, and animations powered by React-Typed, React-Fast-Marquee, and Lottie-React libraries. Most of the icons are sourced from the React-Icons library.",
+    url: "https://github.com/ruveydakisla/ruveydakisla.github.io",
+    techs: ["NextJS", "TailwindCSS"],
+    features: [
+      "Responsive Design : Fully functional on both mobile and web platforms, ensuring a seamless user experience across all devices.",
+      "Next.js Framework : Utilizes Next.js for server-side rendering and optimized performance.",
+      "Tailwind CSS : Styled with Tailwind CSS for a modern, responsive, and customizable design.",
+      "Email Sender : Integrated Email.js for sending emails directly from the contact form.",
+      "Form Validation : Validations handled by React-Toastify to ensure proper input and user feedback.",
+      "Animations : Implemented animations using React-Typed, React-Fast-Marquee, and Lottie-React for an engaging user experience.",
+      "Icon Library : Most icons are sourced from the React-Icons library, providing a wide range of customizable icons.",
+    ],
+  },
 ];
