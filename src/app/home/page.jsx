@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
+import { personalData } from "../../../utils/data/persona-data";
 async function getGitProfile() {
   const res = await fetch(`https://api.github.com/users/ruveydakisla`);
   if (!res.ok) {
@@ -45,14 +46,14 @@ export default function Home() {
             </h1>
             <div className="w-full flex justify-center items-center gap-5">
               <Link
-                href={profile.html_url}
+                href={personalData.github}
                 target="_blank"
                 className="transition-all text-teal-500 hover:scale-125 duration-300"
               >
                 <BsGithub size={24} />
               </Link>
               <Link
-                href={profile.blog}
+                href={personalData.linkedIn}
                 target="_blank"
                 className="transition-all text-teal-500 hover:scale-125 duration-300"
               >
