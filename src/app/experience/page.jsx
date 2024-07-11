@@ -1,6 +1,4 @@
 // @flow strict
-
-import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { AnimationLottie } from "@/components/animation-lottie";
 import GlowCard from "@/components/glow-card";

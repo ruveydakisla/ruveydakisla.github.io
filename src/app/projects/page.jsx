@@ -1,8 +1,6 @@
 "use client";
-import CodeCard from "@/components/codeCard";
 import CustomModal from "@/components/modal";
 import ProjectCard from "@/components/project-card";
-import ProjectCodeCard from "@/components/project-code-card";
 import React, { useState } from "react";
 import { projects } from "../../../utils/data/projects";
 

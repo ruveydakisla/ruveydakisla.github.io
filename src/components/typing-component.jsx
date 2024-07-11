@@ -1,5 +1,4 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
 import { ReactTyped } from "react-typed";
 export default function Typingcomponent() {
   return (

@@ -1,16 +1,11 @@
 "use client";
 import Navbar from "@/components/navbar";
-import Image from "next/image";
 import About from "./about/page";
 import Education from "./education/page";
 import Experience from "./experience/page";
 import Projects from "./projects/page";
 import Skills from "./skills/page";
-import Link from "next/link";
-import { ReactTyped } from "react-typed";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { MdDownload } from "react-icons/md";
-import { TypeAnimation } from "react-type-animation";
+
 import Homee from "./home/page";
 import Contact from "./contact/page";
 

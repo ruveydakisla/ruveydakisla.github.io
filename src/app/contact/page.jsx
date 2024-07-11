@@ -6,8 +6,6 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import ContactWithoutCaptcha from "./contact-without-captcha";
-// import ContactWithCaptcha from './contact-with-captcha';
-// import ContactWithoutCaptcha from './contact-without-captcha';
 
 function Contact() {
   return (
