@@ -36,6 +36,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
                 onClick={handleModal}
               >
                 <Image
+                alt="icon"
                   className="text-white w-8"
                   src={require("../../public/icons/close.svg")}
                 />
@@ -59,6 +60,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
                 <div className="flex py-4 flex-row space-x-5 w-full justify-center">
                   {project.techs.map((tech, index) => (
                     <Image
+                    alt="icon"
                       key={index}
                       className="w-8"
                       src={require(`../../public/icons/${tech}.svg`)}
@@ -70,6 +72,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
 
             {project.image && (
               <Image
+              alt="icon"
                 style={{ objectFit: "contain" }}
                 className="md:block hidden w-40 "
                 src={require(`../../public/${project.image}.png`)}

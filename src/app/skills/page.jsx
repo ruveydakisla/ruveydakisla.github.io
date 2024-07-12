@@ -52,6 +52,7 @@ export default function Skills() {
                   <div className="flex flex-col items-center justify-center gap-3 p-6">
                     <div className="h-8 sm:h-10">
                       <Image
+                      alt="icon"
                       className="w-12"
                         src={require(`../../../public/icons/${skill}.svg`)}
                       />
