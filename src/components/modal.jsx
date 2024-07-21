@@ -22,7 +22,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
         } flex justify-center items-center`}
       >
         <div
-          className={`md:max-w-[1000px]  border-green-500 border w-full max-h-full mt-4 mx-2   overflow-scroll md:max-h-[600px] shadow-lg py-2 rounded-md ${animate}`}
+          className={`md:max-w-[1000px]  border-green-500 border w-full max-h-full mt-4 mx-2  md:overflow-hidden overflow-scroll md:max-h-[600px] shadow-lg py-2 rounded-md ${animate}`}
           onAnimationEnd={() => !isOpen && setAnimate("")}
         >
           <div className="flex flex-row justify-between ">
