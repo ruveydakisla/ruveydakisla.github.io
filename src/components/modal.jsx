@@ -22,7 +22,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
         } flex justify-center items-center`}
       >
         <div
-          className={`max-w-[1000px] border-green-500 border max-h-[600px] shadow-lg py-2 rounded-md ${animate}`}
+          className={`md:max-w-[1000px]  border-green-500 border w-full max-h-full mt-4 mx-2   overflow-scroll md:max-h-[600px] shadow-lg py-2 rounded-md ${animate}`}
           onAnimationEnd={() => !isOpen && setAnimate("")}
         >
           <div className="flex flex-row justify-between ">
@@ -36,7 +36,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
                 onClick={handleModal}
               >
                 <Image
-                alt="icon"
+                  alt="icon"
                   className="text-white w-8"
                   src={require("../../public/icons/close.svg")}
                 />
@@ -60,7 +60,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
                 <div className="flex py-4 flex-row space-x-5 w-full justify-center">
                   {project.techs.map((tech, index) => (
                     <Image
-                    alt="icon"
+                      alt="icon"
                       key={index}
                       className="w-8"
                       src={require(`../../public/icons/${tech}.svg`)}
@@ -72,7 +72,7 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
 
             {project.image && (
               <Image
-              alt="icon"
+                alt="icon"
                 style={{ objectFit: "contain" }}
                 className="md:block hidden w-40 "
                 src={require(`../../public/${project.image}.png`)}
