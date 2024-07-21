@@ -8,7 +8,7 @@ export default function Skills() {
     <div id="skills">
       <div
         id="skills"
-        className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+        className="relative  border-t my-12 lg:my-24 border-[#25213b]"
       >
         <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
@@ -52,8 +52,8 @@ export default function Skills() {
                   <div className="flex flex-col items-center justify-center gap-3 p-6">
                     <div className="h-8 sm:h-10">
                       <Image
-                      alt="icon"
-                      className="w-12"
+                        alt="icon"
+                        className="w-12"
                         src={require(`../../../public/icons/${skill}.svg`)}
                       />
                     </div>
