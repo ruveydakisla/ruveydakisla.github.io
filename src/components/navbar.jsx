@@ -13,7 +13,7 @@ export default function Navbar() {
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
               href="/#about"
-            >
+            > 
               <div className="text-sm uppercase text-primary-icon transition-colors  duration-300 underline-offset-8 hover:underline hover:duration-200 hover:transition-all hover:scale-125">
                 About
               </div>

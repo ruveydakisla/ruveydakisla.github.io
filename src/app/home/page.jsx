@@ -159,6 +159,9 @@ export default function Home() {
                   <span className="text-gray-400">{"', '"}</span>
                   <span className="text-amber-300">NextJS</span>
                   <span className="text-gray-400">{"', '"}</span>
+                  <span className="text-amber-300">Typescript</span>
+                  <span className="text-gray-400">{"', '"}</span>
+
                   <span className="text-amber-300">Redux</span>
                   <span className="text-gray-400">{"', '"}</span>
                   <span className="text-amber-300">React Native</span>

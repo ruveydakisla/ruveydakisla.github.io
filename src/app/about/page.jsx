@@ -1,6 +1,6 @@
-"use client";
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { personalData } from "../../../utils/data/persona-data";
 async function getGitProfile() {
@@ -11,8 +11,16 @@ async function getGitProfile() {
 
   return await res.json();
 }
-export default async function About() {
+export default  function About() {
+const [profile,setProfile]=useState({});
+const get=async()=>{
   const profile = await getGitProfile();
+setProfile(profile)
+}
+useEffect(()=>{
+  get();
+
+},[])
   return (
     <div id="about" className=" my-12 relative">
       <div className="flex justify-center my-5 mb-20 lg:py-8">

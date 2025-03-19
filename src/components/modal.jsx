@@ -58,14 +58,17 @@ const CustomModal = ({ handleModal, isOpen, project }) => {
                   ))}
                 </ol>
                 <div className="flex py-4 flex-row space-x-5 w-full justify-center">
-                  {project.techs.map((tech, index) => (
-                    <Image
-                      alt="icon"
-                      key={index}
-                      className="w-8"
-                      src={require(`../../public/icons/${tech}.svg`)}
-                    />
-                  ))}
+                  {project.techs.map((tech, index) => {
+                    let src;
+                    try {
+                      src = require(`../../public/icons/${tech}.svg`);
+                    } catch (error) {
+                      src = require(`../../public/icons/${tech}.png`);
+                    }
+                    return (
+                      <Image alt="icon" key={index} className="w-8" src={src} />
+                    );
+                  })}
                 </div>
               </div>
             </div>
