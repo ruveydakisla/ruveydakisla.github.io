@@ -7,4 +7,5 @@ export const skills = [
   "Asp.Net",
   "TailwindCSS",
   "Bootstrap",
+  "TypeScript"
 ];
