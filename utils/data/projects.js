@@ -1,21 +1,21 @@
 export const projects = [
   {
     name: "Music App",
-    description: "Music App is a feature-rich music application built with React Native and Expo, offering smooth UI interactions, advanced audio playback, and efficient playlist management. Designed for both iOS and Android, the app ensures an immersive and seamless music experience.",
+    description:
+      "Music App is a feature-rich music application built with React Native and Expo, offering smooth UI interactions, advanced audio playback, and efficient playlist management. Designed for both iOS and Android, the app ensures an immersive and seamless music experience.",
     features: [
-    "Responsive Design: Fully functional on both mobile platforms with a smooth and engaging UI.",
-    "Audio Playback: Built with react-native-track-player for seamless music streaming and playback control.",
-    "Navigation: Utilizes @react-navigation/native-stack and expo-router for intuitive screen transitions.",
-    "Custom UI Elements: Powered by react-native-reanimated, react-native-gesture-handler, and expo-linear-gradient for fluid animations and polished aesthetics.",
-    "Image Processing: react-native-fast-image and react-native-image-colors optimize artwork loading and UI theming.",
-    "State Management: zustand provides a lightweight and efficient global state management solution."
+      "Responsive Design: Fully functional on both mobile platforms with a smooth and engaging UI.",
+      "Audio Playback: Built with react-native-track-player for seamless music streaming and playback control.",
+      "Navigation: Utilizes @react-navigation/native-stack and expo-router for intuitive screen transitions.",
+      "Custom UI Elements: Powered by react-native-reanimated, react-native-gesture-handler, and expo-linear-gradient for fluid animations and polished aesthetics.",
+      "Image Processing: react-native-fast-image and react-native-image-colors optimize artwork loading and UI theming.",
+      "State Management: zustand provides a lightweight and efficient global state management solution.",
     ],
     project_icon: "music",
-    techs: ["Expo","zustand","typescript"],
+    techs: ["Expo", "zustand", "typescript"],
     url: "https://github.com/ruveydakisla/music-app",
     image: "player",
-
-    },
+  },
   {
     name: "My Portfolio",
     project_icon: "portfolio",
@@ -83,5 +83,24 @@ export const projects = [
       "User-Friendly Interface : A modern and intuitive interface built with React, offering a smooth and engaging user experience.",
     ],
   },
-  
+  {
+    name: "WallpaperApp",
+    project_icon: "wallpaper",
+    description:
+      "WallpaperApp is a modern and responsive mobile application built with Expo and React Native. It allows users to explore, search, download, and share high-quality wallpapers fetched from the Pixabay API. The app features a smooth and interactive UI with category-based filtering, a bottom sheet modal for image previews, and fast performance thanks to optimized libraries like FlashList.",
+    url: "https://github.com/ruveydakisla/wallpaper-app",
+    techs: [
+      "Expo","ReactJS"
+    ],
+    image: "wallpaper-img",
+    features: [
+      "High-Quality Wallpaper Fetching: Retrieves stunning wallpapers via the Pixabay API with search and category filters.",
+      "Save and Share: Allows users to download wallpapers to their device and share them easily.",
+      "Bottom Sheet for Image Preview: Interactive bottom sheet modal for smooth and elegant image previews.",
+      "Optimized Performance: Uses Shopify's FlashList for faster and more memory-efficient list rendering.",
+      "Modern Navigation: Smooth navigation experience with React Navigation.",
+      "User Notifications: Toast messages for feedback and interactions using react-native-toast-message.",
+      "Custom Assets: Beautiful and consistent design with custom icons, placeholders, and splash screen stored in the assets folder.",
+    ],
+  },
 ];
