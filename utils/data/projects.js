@@ -17,6 +17,36 @@ export const projects = [
     image: "player",
   },
   {
+    name: "e-commerce backend",
+    project_icon: "ecommerce",
+    url: "https://github.com/ruveydakisla/e-commerce-backend",
+    techs: [
+      "NestJS",
+      "redis",
+      "elastic-search",
+      "kafka",
+      "typescript",
+      "Docker",
+    ],
+    description:
+      "This project is a robust and scalable e-commerce backend system built using NestJS and a microservices architecture. Designed for high performance and modularity, it utilizes modern technologies such as Kafka for event-driven communication, Redis for efficient caching, and Elasticsearch for powerful full-text search. The architecture supports service isolation and smooth scalability through Docker Compose. Multiple databases (PostgreSQL and MongoDB) are used depending on service requirements, and TypeORM is adopted for seamless data management.",
+    features: [
+      "✅ Microservices Architecture: Modular structure with independently deployable services connected through TCP.",
+
+      "🔁 Event-Driven Communication: Kafka used for asynchronous messaging between services.",
+
+      "🚀 Performance Optimization: Redis caching layer integrated to minimize database load.",
+
+      "🔍 Advanced Search: Elasticsearch support for real-time, large-scale, and full-text search functionality.",
+
+      "📦 Containerized Deployment: Docker Compose used to orchestrate and manage services consistently across environments.",
+
+      "🧩 Polyglot Persistence: PostgreSQL and MongoDB used strategically for relational and document-based data storage.",
+
+      "🛠️ ORM Integration: TypeORM provides a unified and efficient data access layer.",
+    ],
+  },
+  {
     name: "My Portfolio",
     project_icon: "portfolio",
     description:
@@ -89,9 +119,7 @@ export const projects = [
     description:
       "WallpaperApp is a modern and responsive mobile application built with Expo and React Native. It allows users to explore, search, download, and share high-quality wallpapers fetched from the Pixabay API. The app features a smooth and interactive UI with category-based filtering, a bottom sheet modal for image previews, and fast performance thanks to optimized libraries like FlashList.",
     url: "https://github.com/ruveydakisla/wallpaper-app",
-    techs: [
-      "Expo","ReactJS"
-    ],
+    techs: ["Expo", "ReactJS"],
     image: "wallpaper-img",
     features: [
       "High-Quality Wallpaper Fetching: Retrieves stunning wallpapers via the Pixabay API with search and category filters.",
