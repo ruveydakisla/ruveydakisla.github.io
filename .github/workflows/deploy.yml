@@ -24,12 +24,8 @@ jobs:
           echo "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}" >> .env.production
           echo "NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}" >> .env.production
           echo "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}" >> .env.production
-
       - name: Build project
         run: npm run build
-
-      - name: Export static files
-        run: npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

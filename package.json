@@ -2,13 +2,12 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
+}
+,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@nextui-org/modal": "^2.0.36",
