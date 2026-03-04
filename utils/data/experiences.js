@@ -3,7 +3,7 @@ export const experiences = [
     id: 3,
     title: "Software Engineer ",
     company: "ASA STUDYO TICARET LIMITED",
-    duration: "(Aug 2024- Present)",
+    duration: "(Aug 2024- March 2025)",
   },
   {
     id: 2,
