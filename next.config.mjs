@@ -1,6 +1,7 @@
 import { join } from "path";
 
 export default {
+  output: "export",
   images: {
     domains: [
       "media.dev.to",
